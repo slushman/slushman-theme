@@ -1,0 +1,73 @@
+// Footer
+// --------------------------
+
+.site-footer {
+	color: $light;
+
+	a {
+		color: $light;
+	}
+
+	.footer-wrap {
+		max-width: 75em;
+		margin: auto;
+		padding: 0 4em;
+
+		.footer_left {
+
+			@include footerboxes;
+
+			@media all and (min-width: $responsive2) {
+				float: left;
+			}
+
+			.nav-social {
+				text-align: center;
+		
+				.menu-items {
+					margin: 0;
+
+					.menu-item {
+
+						a:before {
+							color: $light;
+						}
+
+					}
+
+				}
+			}
+		}
+
+		.site-info {
+			margin: auto;
+			text-align: center;
+
+			@include footerboxes;
+		}
+
+		.site-credits {
+			text-align: center;
+			line-height: 2em;
+			max-width: 11em;
+			margin: 0 auto;
+			
+			@include footerboxes;
+
+			@media all and (min-width: $responsive2) {
+				float: right;
+				line-height: inherit;
+			}
+
+			.slushman {
+				float: left;
+				line-height: 2em;
+
+				@media all and (min-width: $responsive2) {
+					line-height: inherit;
+					margin-right: 0.75em;
+				}
+			}
+		}
+	}
+}
